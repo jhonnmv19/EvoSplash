@@ -327,13 +327,13 @@ Si ves errores de CORS en la consola:
 ---
 
 ## 👤 Autor
-
-Proyecto académico desarrollado como **proyecto final**.
+Jhonn Alan Meneses Veizaga
+Proyecto académico desarrollado como **proyecto final Evo Splash**.
 
 **Contacto:**
-- Universidad: [Tu Universidad]
-- Materia: [Tu Materia]
-- Gestión: 2024
+- Universidad: [UPDS]
+- Materia: [Tecnologia WebI]
+- Gestión: 2025
 
 ---
 
