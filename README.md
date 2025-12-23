@@ -68,11 +68,14 @@ La identidad visual está inspirada en agua, frescura y confianza.
 │   └── admin/
 │       ├── login.html
 │       └── panel.html
-│
+│── imagenes/
+│   
 ├── css/
 │   ├── styles.css
 │   └── admin.css
-│
+│── informacion/
+│   ├── seguridad.json
+│  
 ├── js/
 │   ├── app.js
 │   ├── parques.js
