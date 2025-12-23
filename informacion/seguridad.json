@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "titulo": "Seguridad e Higiene 🛡️",
+    "descripcion": "Tu seguridad y la de tu familia es nuestra prioridad."
+  },
+  "cards": [
+    {
+      "icono": "🏊‍♂️",
+      "titulo": "Salvavidas Certificados",
+      "descripcion": "Todos nuestros parques cuentan con personal de salvavidas profesional y certificado."
+    },
+    {
+      "icono": "🧪",
+      "titulo": "Control de Calidad del Agua",
+      "descripcion": "Realizamos análisis de calidad del agua cada 2 horas."
+    },
+    {
+      "icono": "🚨",
+      "titulo": "Equipamiento de Emergencia",
+      "descripcion": "Contamos con botiquines de primeros auxilios y equipos de rescate."
+    },
+    {
+      "icono": "🧼",
+      "titulo": "Protocolos de Limpieza",
+      "descripcion": "Limpieza y desinfección constante de todas las instalaciones."
+    },
+    {
+      "icono": "👶",
+      "titulo": "Zonas Seguras para Niños",
+      "descripcion": "Áreas especiales con profundidades adecuadas y vigilancia especializada."
+    },
+    {
+      "icono": "📋",
+      "titulo": "Inspecciones Regulares",
+      "descripcion": "Inspecciones periódicas por autoridades sanitarias."
+    }
+  ],
+  "normas": {
+    "permitido": [
+      "Uso de trajes de baño apropiados",
+      "Chalecos salvavidas para niños",
+      "Aplicación de bloqueador solar",
+      "Ingreso de alimentos para bebés",
+      "Uso de cámaras con precaución"
+    ],
+    "no_permitido": [
+      "Correr en áreas resbaladizas",
+      "Zambullirse en zonas poco profundas",
+      "Ingreso de bebidas alcohólicas",
+      "Ingreso de mascotas",
+      "Objetos cortantes o de vidrio"
+    ],
+    "recomendaciones": [
+      "Supervisar siempre a los niños",
+      "Hidratarse constantemente",
+      "Aplicar bloqueador cada 2 horas",
+      "Respetar señalizaciones",
+      "Reportar riesgos al personal"
+    ]
+  }
+}

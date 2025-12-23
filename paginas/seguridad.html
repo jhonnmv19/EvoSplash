@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguridad - EvoSplash</title>
+    <link rel="icon" href="Imagenes/logoEvo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+     <a href="../index.html" class="navbar-logo">
+  <img src="../imagenes/logoEvo.png" alt="EvoSplash Logo">
+</a>
+      <button class="navbar-toggle" id="navbarToggle" aria-label="Abrir menú">☰</button>
+      <ul class="navbar-menu" id="navbarMenu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="parques.html">Parques</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="seguridad.html" class="active">Seguridad</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="../paginas/admin/login.html">Iniciar sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1 id="heroTitulo">Seguridad en EvoSplash</h1>
+      <p id="heroDescripcion">Tu seguridad y la de tu familia es nuestra prioridad.</p>
+    </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main>
+    <section class="section">
+      <div class="container">
+
+        <!-- Sección Atracciones -->
+        <h2 class="section-title" style="color: var(--color-primario);">Atracciones Seguras</h2>
+        <div class="cards-grid" id="seguridadCards"></div>
+
+        <!-- Normas de Seguridad -->
+        <div class="form-container mt-4">
+          <h2 class="text-center mb-3" style="color: var(--color-primario);">
+            Normas de Seguridad para Visitantes
+          </h2>
+
+          <div class="modal-section">
+            <h3>✅ Se Permite:</h3>
+            <ul id="listaPermitido"></ul>
+          </div>
+
+          <div class="modal-section mt-3">
+            <h3>❌ No se Permite:</h3>
+            <ul id="listaNoPermitido"></ul>
+          </div>
+
+          <div class="modal-section mt-3">
+            <h3>⚠️ Recomendaciones:</h3>
+            <ul id="listaRecomendaciones"></ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>EvoSplash</h3>
+        <p>Tu guía confiable de parques acuáticos en Bolivia.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="parques.html">Parques</a></li>
+          <li><a href="promociones.html">Promociones</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Información</h3>
+        <ul>
+          <li><a href="seguridad.html">Seguridad</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="admin/login.html">Administración</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Departamentos</h3>
+        <ul>
+          <li>Santa Cruz</li>
+          <li>Cochabamba</li>
+          <li>La Paz</li>
+          <li>Tarija</li>
+          <li>Potosí</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 EvoSplash. Proyecto académico - Turismo Bolivia.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../js/seguridad.js"></script>
+  <script>
+    // Navbar Toggle
+    const navbarToggle = document.getElementById('navbarToggle');
+    const navbarMenu = document.getElementById('navbarMenu');
+
+    if (navbarToggle) {
+      navbarToggle.addEventListener('click', () => {
+        navbarMenu.classList.toggle('active');
+      });
+    }
+  </script>
+
+</body>
+</html>

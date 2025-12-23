@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Panel Administrativo</title>
+  <link rel="icon" href="Imagenes/logoEvo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../css/admin.css">
+</head>
+<body>
+
+  <!-- MAIN LANDMARK -->
+  <main class="login-page">
+
+    <section class="login-card" aria-labelledby="loginTitle">
+
+      <div class="login-logo">
+        <h1 id="loginTitle">EvoSplash</h1>
+        <p>Panel de Administración</p>
+      </div>
+
+      <div id="alertContainer" role="alert" aria-live="assertive"></div>
+
+      <form id="loginForm" class="login-form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input 
+            type="email"
+            id="email"
+            name="email"
+            placeholder="admin@evosplash.bo"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="password">Contraseña</label>
+          <input 
+            type="password"
+            id="password"
+            name="password"
+            placeholder="••••••••"
+            required
+          >
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          Iniciar Sesión
+        </button>
+      </form>
+
+      <nav style="text-align:center; margin-top:2rem;">
+        <a href="../../index.html">
+          ← Volver al sitio
+        </a>
+      </nav>
+
+     <!--<aside style="margin-top:2rem; padding:1rem; background-color:#f1f5f9; border-radius:10px;">
+        <p style="font-size:0.85rem; margin:0;">
+          <strong>Credenciales de prueba:</strong><br>
+          Email: admin@evosplash.bo<br>
+          Contraseña: admin123
+        </p>
+      </aside>-->
+
+    </section> 
+  </main>
+
+  <!-- JavaScript -->
+  <script src="../../js/admin/login.js"></script>
+
+</body>
+</html>

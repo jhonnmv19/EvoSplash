@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EvoSplash - Portal de Parques Acuáticos en Bolivia</title>
+  <link rel="icon" href="Imagenes/logoEvo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+<a href="index.html" class="navbar-logo">
+  <img src="imagenes/logoEvo.png" alt="EvoSplash Logo">
+</a>
+
+
+
+      <button 
+        class="navbar-toggle" 
+        id="navbarToggle"
+        aria-label="Abrir menú de navegación">
+        ☰
+      </button>
+
+      <ul class="navbar-menu" id="navbarMenu">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="paginas/parques.html">Parques</a></li>
+        <li><a href="paginas/promociones.html">Promociones</a></li>
+        <li><a href="paginas/galeria.html">Galería</a></li>
+        <li><a href="paginas/seguridad.html">Seguridad</a></li>
+        <li><a href="paginas/contacto.html">Contacto</a></li>
+        <li><a href="paginas/admin/login.html">Iniciar sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Bienvenido a EvoSplash </h1>
+        <p>
+          Tu guía confiable de parques acuáticos en Bolivia.
+          Descubre los mejores destinos acuáticos, promociones exclusivas
+          y vive experiencias inolvidables con tu familia.
+        </p>
+        <a href="paginas/parques.html" class="btn btn-primary">Explorar Parques</a>
+        <a href="paginas/promociones.html" class="btn btn-secondary">Ver Promociones</a>
+      </div>
+    </section>
+
+    <!-- Parques Destacados -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Parques Acuáticos Destacados</h2>
+
+        <div class="cards-grid" id="parquesDestacados">
+          <div class="loading">
+            <div class="spinner"></div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="paginas/parques.html" class="btn btn-secondary">
+            Ver Todos los Parques
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promociones -->
+    <section class="section" style="background-color: var(--bg-secundario);">
+      <div class="container">
+        <h2 class="section-title">Promociones Activas 🎉</h2>
+
+        <div class="cards-grid" id="promocionesActivas">
+          <div class="loading">
+            <div class="spinner"></div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="paginas/promociones.html" class="btn btn-primary">
+            Ver Todas las Promociones
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Por qué EvoSplash -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">¿Por qué elegir EvoSplash?</h2>
+
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">🔍 Información Actualizada</h3>
+              <p class="card-description">
+                Encuentra información real y actualizada sobre parques acuáticos en toda Bolivia.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">💰 Mejores Promociones</h3>
+              <p class="card-description">
+                Descubre descuentos exclusivos y promociones vigentes para toda la familia.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">📍 Ubicaciones Reales</h3>
+              <p class="card-description">
+                Encuentra fácilmente los parques con enlaces directos a Google Maps.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">🛡️ Seguridad Garantizada</h3>
+              <p class="card-description">
+                Todos los parques cumplen con estrictas normas de seguridad e higiene.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>EvoSplash</h3>
+        <p>
+          Tu guía confiable de parques acuáticos en Bolivia.
+          Diversión, seguridad y experiencias inolvidables.
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="paginas/parques.html">Parques</a></li>
+          <li><a href="paginas/promociones.html">Promociones</a></li>
+          <li><a href="paginas/galeria.html">Galería</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Información</h3>
+        <ul>
+          <li><a href="paginas/seguridad.html">Seguridad</a></li>
+          <li><a href="paginas/contacto.html">Contacto</a></li>
+          <li><a href="paginas/admin/login.html">Administración</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Departamentos</h3>
+        <ul>
+          <li>Santa Cruz</li>
+          <li>Cochabamba</li>
+          <li>La Paz</li>
+          <li>Tarija</li>
+          <li>Potosí</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 EvoSplash. Proyecto académico - Turismo Bolivia.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="supa/supabase.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

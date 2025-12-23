@@ -1,0 +1,517 @@
+/* =================================================
+   Estilos del Panel de Administración
+   ================================================= */
+
+.admin-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* =================================================
+   Login Page - Ajustes esenciales de accesibilidad
+   ================================================= */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, var(--color-primario) 0%, var(--color-acento) 100%);
+}
+
+.login-card {
+  background-color: var(--blanco);
+  color: #073b4c; /* texto oscuro para buen contraste */
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+  animation: slideUp 0.5s ease-out;
+}
+
+.login-logo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-logo h1 {
+  color: #005f73; /* azul oscuro para buen contraste */
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.login-logo p {
+  color: #073b4c; /* gris oscuro para buen contraste */
+  font-size: 0.9rem;
+}
+
+.login-form {
+  margin-top: 2rem;
+}
+
+.login-form input:focus {
+  outline: 3px solid #0a9396; /* foco visible para teclado */
+  outline-offset: 2px;
+}
+
+button.btn.btn-primary {
+  background-color: #005f73; /* azul oscuro */
+  color: #ffffff;             /* texto blanco */
+  width: 100%;
+}
+
+button.btn.btn-primary:hover,
+button.btn.btn-primary:focus {
+  background-color: #0a9396; /* azul acento */
+}
+
+.login-card a {
+  color: #005f73;  /* contraste suficiente */
+  text-decoration: none;
+}
+
+.login-card a:hover,
+.login-card a:focus {
+  text-decoration: underline;
+  outline: 2px solid #0a9396;
+  outline-offset: 2px;
+}
+
+.alert {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.alert-error {
+  background-color: #fee;
+  color: #9b2226;  /* rojo oscuro */
+  border: 1px solid #9b2226;
+}
+
+.alert-success {
+  background-color: #efe;
+  color: #006400;  /* verde oscuro */
+  border: 1px solid #006400;
+}
+
+
+/* =================================================
+   Panel Header
+   ================================================= */
+
+.admin-header {
+  background-color: var(--blanco);
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-title {
+  color: var(--color-primario);
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+/* =================================================
+   Tabs Navigation
+   ================================================= */
+
+.admin-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  background-color: var(--blanco);
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  background-color: transparent;
+  color: var(--texto-principal);
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.tab-btn:hover {
+  background-color: var(--bg-secundario);
+}
+
+.tab-btn.active {
+  background-color: var(--color-primario);
+  color: var(--blanco);
+}
+
+/* =================================================
+   Tab Content
+   ================================================= */
+
+.tab-content {
+  display: none;
+  animation: fadeIn 0.4s;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* =================================================
+   Admin Cards
+   ================================================= */
+
+.admin-card {
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.admin-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--bg-secundario);
+}
+
+.admin-card-title {
+  color: var(--color-primario);
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* =================================================
+   Tabla
+   ================================================= */
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--blanco);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.admin-table thead {
+  background-color: var(--color-primario);
+  color: var(--blanco);
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--bg-secundario);
+}
+
+.admin-table th {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.admin-table tbody tr {
+  transition: background-color 0.2s;
+}
+
+.admin-table tbody tr:hover {
+  background-color: var(--gris-claro);
+}
+
+.admin-table img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* =================================================
+   Botones de Acción
+   ================================================= */
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-sm {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  border-radius: 5px;
+}
+
+.btn-edit {
+  background-color: var(--color-acento);
+  color: var(--blanco);
+}
+
+.btn-edit:hover {
+  background-color: #0ca5b0;
+}
+
+.btn-delete {
+  background-color: var(--rojo-inactivo);
+  color: var(--blanco);
+}
+
+.btn-delete:hover {
+  background-color: #dc2626;
+}
+
+/* =================================================
+   Formulario Modal
+   ================================================= */
+
+.form-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 3000;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  padding: 2rem 0;
+}
+
+.form-modal.active {
+  display: flex;
+}
+
+.form-modal-content {
+  background-color: var(--blanco);
+  border-radius: 20px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 2rem;
+  animation: slideUp 0.4s ease-out;
+}
+
+.form-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--bg-secundario);
+}
+
+.form-modal-title {
+  color: var(--color-primario);
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* =================================================
+   Dashboard Stats
+   ================================================= */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, var(--color-primario), var(--color-acento));
+  color: var(--blanco);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* =================================================
+   Lista de Solicitudes
+   ================================================= */
+
+.solicitudes-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.solicitud-item {
+  background-color: var(--blanco);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid var(--color-acento);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.solicitud-item:hover {
+  transform: translateX(5px);
+}
+
+.solicitud-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.solicitud-info h4 {
+  color: var(--color-primario);
+  margin-bottom: 0.3rem;
+}
+
+.solicitud-info p {
+  color: var(--gris-medio);
+  font-size: 0.9rem;
+  margin: 0.2rem 0;
+}
+
+.solicitud-promo {
+  background-color: var(--bg-secundario);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.solicitud-mensaje {
+  background-color: var(--gris-claro);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  font-style: italic;
+  color: var(--texto-principal);
+}
+
+/* =================================================
+   Empty State
+   ================================================= */
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: var(--gris-medio);
+}
+
+.empty-state svg,
+.empty-state img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 1rem;
+  opacity: 0.5;
+}
+
+.empty-state h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* =================================================
+   Loading Spinner
+   ================================================= */
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--bg-secundario);
+  border-top-color: var(--color-primario);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+/* =================================================
+   RESPONSIVE
+   ================================================= */
+
+@media (max-width: 1024px) {
+  .admin-container { padding: 1.5rem; }
+}
+
+@media (max-width: 768px) {
+  .admin-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .admin-tabs {
+    flex-direction: column;
+  }
+
+  .tab-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .solicitud-header {
+    flex-direction: column;
+    gap: .5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .btn-sm {
+    width: 100%;
+  }
+}

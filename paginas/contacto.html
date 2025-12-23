@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - EvoSplash</title>
+    <link rel="icon" href="Imagenes/logoEvo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="../index.html" class="navbar-logo">
+  <img src="../imagenes/logoEvo.png" alt="EvoSplash Logo">
+</a>
+      <button class="navbar-toggle" id="navbarToggle" aria-label="Abrir menú">☰</button>
+      <ul class="navbar-menu" id="navbarMenu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="parques.html">Parques</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="seguridad.html">Seguridad</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+        <li><a href="../paginas/admin/login.html">Iniciar sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="hero" role="banner">
+    <div class="hero-content">
+      <h1>Contáctanos 📧</h1>
+      <p>¿Tienes preguntas? Estamos aquí para ayudarte.</p>
+    </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="section" role="main">
+    <div class="container">
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        
+        <!-- Información de Contacto -->
+        <section aria-labelledby="infoContacto">
+          <h2 id="infoContacto" class="mb-3" style="color: var(--color-primario);">Información de Contacto</h2>
+          
+          <div class="card mb-3">
+            <div class="card-content">
+              <h3 class="card-title">📧 Email</h3>
+              <p class="card-description">info@evosplash.bo<br>contacto@evosplash.bo</p>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-content">
+              <h3 class="card-title">📱 Teléfonos</h3>
+              <p class="card-description">
+                Santa Cruz: +591 72793459<br>
+                Cochabamba: +591 60477152<br>
+                La Paz: +591 69451429
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">🕐 Horarios de Atención</h3>
+              <p class="card-description">
+                Lunes a Viernes: 9:00 AM - 6:00 PM<br>
+                Sábados: 9:00 AM - 1:00 PM<br>
+                Domingos y Feriados: Cerrado
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section aria-labelledby="formContacto">
+          <h2 id="formContacto" class="mb-3" style="color: var(--color-primario);">Envíanos un Mensaje</h2>
+          
+          <form id="contactoForm" class="form-container">
+            <div class="form-group">
+              <label for="nombre">Nombre Completo *</label>
+              <input type="text" id="nombre" name="nombre" required aria-required="true">
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Correo Electrónico *</label>
+              <input type="email" id="email" name="email" required aria-required="true">
+            </div>
+            
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono">
+            </div>
+            
+            <div class="form-group">
+              <label for="asunto">Asunto *</label>
+              <select id="asunto" name="asunto" required aria-required="true">
+                <option value="">Selecciona un asunto</option>
+                <option value="informacion">Información General</option>
+                <option value="promocion">Consulta sobre Promoción</option>
+                <option value="reserva">Reservas Grupales</option>
+                <option value="sugerencia">Sugerencias</option>
+                <option value="reclamo">Reclamos</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="mensaje">Mensaje *</label>
+              <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje aquí..." aria-required="true"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;" aria-label="Enviar mensaje">
+              Enviar Mensaje
+            </button>
+          </form>
+        </section>
+
+      </div>
+
+      <!-- Preguntas Frecuentes -->
+      <section aria-labelledby="faq">
+        <h2 id="faq" class="section-title">Preguntas Frecuentes</h2>
+        
+        <div class="cards-grid">
+          
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">¿Cómo puedo reservar entradas?</h3>
+              <p class="card-description">
+                Actualmente no manejamos reservas online. Puedes comprar tus entradas directamente 
+                en la boletería de cada parque o solicitar información sobre grupos especiales.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">¿Hacen descuentos para grupos?</h3>
+              <p class="card-description">
+                Sí, ofrecemos descuentos especiales para grupos de más de 10 personas, colegios 
+                y empresas. Contáctanos para más información.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">¿Los parques abren todo el año?</h3>
+              <p class="card-description">
+                La mayoría de nuestros parques están abiertos todo el año. Sin embargo, algunos 
+                pueden tener horarios especiales durante temporada baja. Verifica en cada parque.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">¿Puedo llevar comida?</h3>
+              <p class="card-description">
+                Las políticas varían según cada parque. Algunos permiten alimentos sellados, 
+                mientras que otros solo permiten comida para bebés. Consulta directamente.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>EvoSplash</h3>
+        <p>Tu guía confiable de parques acuáticos en Bolivia.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="parques.html">Parques</a></li>
+          <li><a href="promociones.html">Promociones</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Información</h3>
+        <ul>
+          <li><a href="seguridad.html">Seguridad</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="admin/login.html">Administración</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Departamentos</h3>
+        <ul>
+          <li>Santa Cruz</li>
+          <li>Cochabamba</li>
+          <li>La Paz</li>
+          <li>Tarija</li>
+          <li>Potosí</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 EvoSplash. Proyecto académico - Turismo Bolivia.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../supa/supabase.js"></script>
+  <script src="../js/contacto.js"></script>
+
+</body>
+</html>
